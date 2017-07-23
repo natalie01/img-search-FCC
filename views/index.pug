@@ -1,0 +1,30 @@
+doctype html  
+html(lang='en')  
+ head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet',href= "index.css")
+  title Image Search Abstraction Layer
+ body
+  h1 Image Search Abstraction Layer
+  h3 Search images and get results in json format
+  div.container
+   form(id="file-form" , action = "https://clever-cactus.glitch.me", method = "post")
+    label(for='term') Term:
+     input(type="text", name="text")
+    br
+    label(for='offset') Offset:
+     input(type="text", name="offset")
+    br
+    input(type="submit", value="submit").button
+   br
+   p if you want to see 10 results,use offset = 1.
+   p if you want to see 20 results,use offset = 2.
+   p and so on...
+   p #{result}
+    br
+    a(href="/imgsearch", target="_blank") #{url}
+   p see recent search terms:
+    br
+    a(href='/recent', target="_blank") #{"https://clever-cactus.glitch.me/recent"}
+

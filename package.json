@@ -1,0 +1,26 @@
+{
+  "name": "image-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "8.1.4",
+    "npm": "5.3.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.2",
+    "mongodb": "*",
+    "mongoose": "*",
+    "moment": "^2.18.1"
+  }
+}
